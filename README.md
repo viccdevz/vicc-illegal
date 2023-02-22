@@ -30,4 +30,4 @@
 	['kokainislenmis'] 		 = {['name'] = 'kokainislenmis', 			['label'] = 'İşlenmiş Kokain', 	['weight'] = 100, 		['type'] = 'item', 		['image'] = 'islenmiskokain.png', 	['unique'] = false, 	['useable'] = true, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'İşlenmiş Kokain'},
 ```
 - Download the script and put it in the `[qb]` directory.
-- Script dosyalarını indirin ve "[qb]" dizinine koyun.
+- Script dosyalarını indirin ve `[qb]` dizinine koyun.
