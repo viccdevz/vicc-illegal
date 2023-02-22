@@ -1,0 +1,9 @@
+	-- qb-core > shared > items.lua
+    
+    -- Vicc İllegal
+	['esrar'] 				 = {['name'] = 'esrar', 			  	  	['label'] = 'Esrar', 			['weight'] = 200, 		['type'] = 'item', 		['image'] = 'esrar.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'Esrar'},
+	['esrarislenmis'] 		 = {['name'] = 'esrarislenmis', 			['label'] = 'İşlenmiş Esrar', 	['weight'] = 100, 		['type'] = 'item', 		['image'] = 'islenmisesrar.png', 	['unique'] = false, 	['useable'] = true, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'İşlenmiş Esrar'},
+	['afyon'] 				 = {['name'] = 'afyon', 			  	  	['label'] = 'Afyon', 			['weight'] = 200, 		['type'] = 'item', 		['image'] = 'afyon.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'Afyon'},
+	['afyonislenmis'] 		 = {['name'] = 'afyonislenmis', 			['label'] = 'İşlenmiş Afyon', 	['weight'] = 100, 		['type'] = 'item', 		['image'] = 'islenmisafyon.png', 	['unique'] = false, 	['useable'] = true, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'İşlenmiş Afyon'},
+	['kokain'] 				 = {['name'] = 'kokain', 			  	  	['label'] = 'Kokain', 			['weight'] = 200, 		['type'] = 'item', 		['image'] = 'kokain.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'Kokain'},
+	['kokainislenmis'] 		 = {['name'] = 'kokainislenmis', 			['label'] = 'İşlenmiş Kokain', 	['weight'] = 100, 		['type'] = 'item', 		['image'] = 'islenmiskokain.png', 	['unique'] = false, 	['useable'] = true, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'İşlenmiş Kokain'},
