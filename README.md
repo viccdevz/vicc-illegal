@@ -28,6 +28,8 @@
 	['afyonislenmis'] 		 = {['name'] = 'afyonislenmis', 			['label'] = 'İşlenmiş Afyon', 	['weight'] = 100, 		['type'] = 'item', 		['image'] = 'islenmisafyon.png', 	['unique'] = false, 	['useable'] = true, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'İşlenmiş Afyon'},
 	['kokain'] 				 = {['name'] = 'kokain', 			  	  	['label'] = 'Kokain', 			['weight'] = 200, 		['type'] = 'item', 		['image'] = 'kokain.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'Kokain'},
 	['kokainislenmis'] 		 = {['name'] = 'kokainislenmis', 			['label'] = 'İşlenmiş Kokain', 	['weight'] = 100, 		['type'] = 'item', 		['image'] = 'islenmiskokain.png', 	['unique'] = false, 	['useable'] = true, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'İşlenmiş Kokain'},
+	['markedbills'] 				 = {['name'] = 'markedbills', 			  	  	['label'] = 'İzli Para', 			['weight'] = 100, 		['type'] = 'item', 		['image'] = 'markedbills.png', 			['unique'] = true, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Money?'},
+
 ```
 - Download the script and put it in the `[qb]` directory.
 - Script dosyalarını indirin ve `[qb]` dizinine koyun.
