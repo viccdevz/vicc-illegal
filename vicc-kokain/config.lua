@@ -16,6 +16,7 @@ Config.KokainsatisBlip = vector3(1545.32, 2225.61, 77.54)
 Config.KokainsatisBlipAd = "Kokain Satış"
 Config.KokainsatisMiktar = 1 -- Esrar satarken minimum satılan miktar
 Config.KokainFiyat = 1000 -- Esrar satış fiyatı
+Config.KaraParaFiyat = 10 -- Kara para aktif ise ne kadar verileceğini belirleyin.
 Config.KokainOdeme = "cash" -- Esrar satılınca para bankayamı nakitmi gelsin (Nakit = cash / Banka = cash)
 
 Config.NPC = vector4(1545.24, 2226.2, 77.54, 187.85) --Satış NPC'sinin konumu
