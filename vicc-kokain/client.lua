@@ -10,7 +10,7 @@ Citizen.CreateThread(function()
         local distance = GetDistanceBetweenCoords(playercoords, cord.x, cord.y, cord.z, true)
         if distance < 10 then
             sleep = 0
-            DrawMarker(2,cord.x, cord.y, cord.z,0.0, 0.0, 0.0, 0.0, 0, 0.0, Config.markerboyutu, Config.markerboyutu, Config.markerboyutu, 255, 255, 0, 50, false, true, 2, nil, nil, false)
+            DrawMarker(22,cord.x, cord.y, cord.z,0.0, 0.0, 0.0, 0.0, 0, 0.0, Config.markerboyutu, Config.markerboyutu, Config.markerboyutu, 255, 255, 0, 50, false, true, 2, nil, nil, false)
             if distance < 2 then
                 DrawText3D(cord.x,cord.y,cord.z, '[E] Kokain Topla')
                 if IsControlJustReleased(0, 38) then
@@ -57,7 +57,7 @@ Citizen.CreateThread(function()
         local distance = GetDistanceBetweenCoords(playercoords, cord.x, cord.y, cord.z, true)
         if distance < 5 then
             sleep = 0
-            DrawMarker(2,cord.x, cord.y, cord.z,0.0, 0.0, 0.0, 0.0, 0, 0.0, Config.markerboyutu, Config.markerboyutu, Config.markerboyutu, 255, 255, 0, 50, false, true, 2, nil, nil, false)
+            DrawMarker(22,cord.x, cord.y, cord.z,0.0, 0.0, 0.0, 0.0, 0, 0.0, Config.markerboyutu, Config.markerboyutu, Config.markerboyutu, 255, 255, 0, 50, false, true, 2, nil, nil, false)
             if distance < 2 then
                 DrawText3D(cord.x,cord.y,cord.z, '[E] Kokainlerini İşle')
                 if IsControlJustReleased(0, 38) then
