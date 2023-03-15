@@ -16,6 +16,7 @@ Config.AfyonsatisBlip = vector3(2484.3, 3446.13, 51.07)
 Config.AfyonsatisBlipAd = "Afyon Satış"
 Config.AfyonsatisMiktar = 1 -- Esrar satarken minimum satılan miktar
 Config.AfyonFiyat = 1000 -- Esrar satış fiyatı
+Config.KaraParaFiyat = 10 -- Kara para sistemi aktif ise ne kadar vereceğini belirler
 Config.AfyonOdeme = "cash" -- Esrar satılınca para bankayamı nakitmi gelsin (Nakit = cash / Banka = cash)
 
 Config.NPC = vector4(2483.94, 3445.73, 51.07, 315.01) --Satış NPC'sinin konumu
