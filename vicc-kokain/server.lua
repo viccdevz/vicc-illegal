@@ -24,7 +24,7 @@ AddEventHandler("vicckokainsatis", function()
 
     if xPlayer.Functions.RemoveItem("kokainislenmis", Config.KokainsatisMiktar) then
         xPlayer.Functions.AddMoney(Config.KokainOdeme, Config.KokainFiyat)
-       -- xPlayer.Functions.AddItem("markedbills", Config.KokainFiyat)
+-- KARA PARA SİSTEMİNİ AÇMAK İÇİN YORUM SATIRINI KALDIRIN-- xPlayer.Functions.AddItem("markedbills", Config.KaraParaFiyat)
         TriggerClientEvent('QBCore:Notify', source, { type = 'success', text = 'İşlenmiş Kokain Sattın!', length = 2500})
     else
         TriggerClientEvent('QBCore:Notify', source, { type = 'error', text = 'Yeterince İşlenmiş Kokain Yok!', length = 2500})
