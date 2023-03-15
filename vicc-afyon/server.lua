@@ -24,6 +24,7 @@ AddEventHandler("viccafyonsatis", function()
 
     if xPlayer.Functions.RemoveItem("afyonislenmis", Config.AfyonsatisMiktar) then
         xPlayer.Functions.AddMoney(Config.AfyonOdeme, Config.AfyonFiyat)
+-- KARA PARA SİSTEMİNİ AÇMAK İÇİN YORUM SATIRINI KALDIRIN-- xPlayer.Functions.AddItem("markedbills", Config.KaraParaFiyat)
         TriggerClientEvent('QBCore:Notify', source, { type = 'success', text = 'İşlenmiş Afyon Sattın!', length = 2500})
     else
         TriggerClientEvent('QBCore:Notify', source, { type = 'error', text = 'Yeterince İşlenmiş Afyon Yok!', length = 2500})
