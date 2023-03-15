@@ -22,8 +22,9 @@ RegisterNetEvent("vicckokainsatis")
 AddEventHandler("vicckokainsatis", function()
     local xPlayer = QBCore.Functions.GetPlayer(source)
 
-    if xPlayer.Functions.RemoveItem("afyonislenmis", Config.KokainsatisMiktar) then
+    if xPlayer.Functions.RemoveItem("kokainislenmis", Config.KokainsatisMiktar) then
         xPlayer.Functions.AddMoney(Config.KokainOdeme, Config.KokainFiyat)
+       -- xPlayer.Functions.AddItem("markedbills", Config.KokainFiyat)
         TriggerClientEvent('QBCore:Notify', source, { type = 'success', text = 'İşlenmiş Kokain Sattın!', length = 2500})
     else
         TriggerClientEvent('QBCore:Notify', source, { type = 'error', text = 'Yeterince İşlenmiş Kokain Yok!', length = 2500})
