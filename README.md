@@ -10,6 +10,8 @@
 - Esrar Scripti (Cannabis Scripts)
 - Kokain Scripti (Cocaine Scripts)
 - 0.01 - 0.09 Resmon
+- Rastgele toplama alanları. (Random collection fields)
+- İsteğe bağlı kara para sistemi. (server.lua'da bulunuyor ayarı) (Optional black money system) (server.lua look)
 - Çok ayrıntılı ve kolay düzenlenebilir Config dosyası (Very detailed and easy editable Config file)
 
 ## Dependencies
