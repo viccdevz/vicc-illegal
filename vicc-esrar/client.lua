@@ -1,49 +1,62 @@
 local availableActions = {}
 -- Esrar toplama
 
+
+local sonesrar = 1
+
 Citizen.CreateThread(function()
-    local sleep = 1000
     while true do
-        local cord = Config.Esrartoplama
+        local sleep = 2000
         local player = PlayerPedId()
         local playercoords = GetEntityCoords(player)
-        local distance = GetDistanceBetweenCoords(playercoords, cord.x, cord.y, cord.z, true)
-        if distance < 10 then
-            sleep = 0
-            DrawMarker(22,cord.x, cord.y, cord.z,0.0, 0.0, 0.0, 0.0, 0, 0.0, Config.markerboyutu, Config.markerboyutu, Config.markerboyutu, 255, 255, 0, 50, false, true, 2, nil, nil, false)
-            if distance < 2 then
-                DrawText3D(cord.x,cord.y,cord.z, '[E] Esrar Topla')
+        local dst = GetDistanceBetweenCoords(playercoords, Config.Esrartoplama[sonesrar].x, Config.Esrartoplama[sonesrar].y, Config.Esrartoplama[sonesrar].z, true)
+        local dst2 = GetDistanceBetweenCoords(playercoords, Config.Esrartoplama[sonesrar].x, Config.Esrartoplama[sonesrar].y, Config.Esrartoplama[sonesrar].z, true)
+        if dst2 < 4 then
+            sleep = 2
+            DrawMarker(2, Config.Esrartoplama[sonesrar].x, Config.Esrartoplama[sonesrar].y, Config.Esrartoplama[sonesrar].z, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.3, 0.3, 100, 0, 254, 150, 0, 0, 0, 0, 0, 0, 0)
+            DrawText3Ds(Config.Esrartoplama[sonesrar].x, Config.Esrartoplama[sonesrar].y, Config.Esrartoplama[sonesrar].z + 0.3, '[E] Esrar Topla')
+            if dst2 < 1 then
                 if IsControlJustReleased(0, 38) then
-                    exports['progressbar']:Progress({
-                        name = "Esrar",
-                        duration = 5000,
-                        label = "Esrar Topluyorsun",
-                        useWhileDead = false,
-                        canCancel = true,
-                        controlDisables = {
-                            disableMovement = true,
-                            disableCarMovement = true,
-                            disableMouse = false,
-                            disableCombat = true,
-                        },
-                        animation = {
-                            animDict = "amb@prop_human_bum_shopping_cart@male@idle_a",
-                            anim = "idle_c",
-                            flags = 49,
-                        },
-                    }, function(status)
-                        if not status then
-                            TriggerServerEvent("viccesrartoplama")
-                        end
-                    end)
+                    sonesrar = math.random(1, #Config.Esrartoplama)
+                    esrartopla()
                 end
-            else
-                sleep = 1000
             end
         end
-        Wait(sleep)
+        Citizen.Wait(sleep)
     end
 end)
+
+
+function esrartopla()
+    if not topluyormu then
+        topluyormu = true
+        exports['progressbar']:Progress({
+            name = "esrartopla",
+            duration = 2000,
+            label = 'Esrar topluyorsun...',
+            useWhileDead = false,
+            canCancel = false,
+            controlDisables = {
+                disableMovement = true,
+                disableCarMovement = true,
+                disableMouse = false,
+                disableCombat = true,
+            },
+            animation = {
+                animDict = "mp_arresting",
+                anim = "a_uncuff",
+                flags = 49,
+            },
+        }, function(cancelled)
+            if not cancelled then
+                TriggerServerEvent('viccesrartoplama')
+                topluyormu = false
+            else
+            end
+        end)
+    end
+end
+
 
 --isleme
 
@@ -123,6 +136,21 @@ Citizen.CreateThread(function()
 end)
 
 function DrawText3D(x,y,z, text)
+    local onScreen,_x,_y=World3dToScreen2d(x,y,z)
+    local px,py,pz=table.unpack(GetGameplayCamCoords())
+    SetTextScale(0.30, 0.30)
+    SetTextFont(0)
+    SetTextProportional(1)
+    SetTextColour(255, 255, 255, 215)
+    SetTextEntry("STRING")
+    SetTextCentre(1)
+    AddTextComponentString(text)
+    DrawText(_x,_y)
+    local factor = (string.len(text)) / 250
+    DrawRect(_x,_y+0.0125, 0.015+ factor, 0.03, 0, 0, 0, 75)
+end
+
+function DrawText3Ds(x,y,z, text)
     local onScreen,_x,_y=World3dToScreen2d(x,y,z)
     local px,py,pz=table.unpack(GetGameplayCamCoords())
     SetTextScale(0.30, 0.30)

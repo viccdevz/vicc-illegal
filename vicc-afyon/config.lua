@@ -1,6 +1,13 @@
 Config={}
 
-Config.Afyontoplama = vector3(2564.22, 6191.74, 161.8) -- Esrar toplama kordinat
+Config.Afyontoplama = { -- AFYONLARIN TOPLANACAĞI BÖLGE
+    vector3(2564.22, 6191.74, 161.8),
+    vector3(2567.48, 6191.08, 162.0),
+    vector3(2568.84, 6188.97, 162.41),
+    vector3(2562.01, 6189.49, 162.26),
+    vector3(2565.5, 6186.53, 162.58),
+    vector3(2559.38, 6187.46, 162.65)
+}
 Config.Afyonisleme = vector3(2329.83, 2571.55, 46.68)-- Esrar işleme kordinat
 Config.Afyonsatis = vector3(2329.83, 2571.55, 46.68) -- Esrar satış kordinat
 Config.markerboyutu = 0.4 -- Marker Boyutu

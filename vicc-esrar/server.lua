@@ -23,8 +23,8 @@ AddEventHandler("viccesrarsatis", function()
     local xPlayer = QBCore.Functions.GetPlayer(source)
 
     if xPlayer.Functions.RemoveItem("esrarislenmis", Config.EsrarSatisMiktar) then
-        xPlayer.Functions.AddMoney(Config.EsrarOdeme, Config.EsrarFiyat)
--- KARA PARA SİSTEMİNİ AÇMAK İÇİN YORUM SATIRINI KALDIRIN-- xPlayer.Functions.AddItem("markedbills", Config.KaraParaFiyat)
+      --  xPlayer.Functions.AddMoney(Config.EsrarOdeme, Config.EsrarFiyat)
+        xPlayer.Functions.AddItem("markedbills", Config.KaraParaFiyat)
         TriggerClientEvent('QBCore:Notify', source, { type = 'success', text = 'İşlenmiş Esrar Sattın!', length = 2500})
     else
         TriggerClientEvent('QBCore:Notify', source, { type = 'error', text = 'Yeterince İşlenmiş Esrarın Yok!', length = 2500})
