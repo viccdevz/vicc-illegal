@@ -1,28 +1,32 @@
 # vicc-illegal
-- TR: Fivem için QBCore illegal script paketi, içinde "Esrar, Kokain, Afyon" bulunuyor.
-- EN: QBCore illegal script package for Fivem, contains "Cannabis, Cocaine, Opium".
-![image](https://user-images.githubusercontent.com/123509837/220655721-8fc53ad1-b030-4b9b-9d67-86f3a42123b6.png)
+
+* TR: Fivem için QBCore illegal script paketi, içinde "Esrar, Kokain, Afyon" bulunuyor.
+* EN: QBCore illegal script package for Fivem, contains "Cannabis, Cocaine, Opium".&#x20;
 
 ## Video Showcase
-- https://youtu.be/E9cA6FUV4v0
+
+* https://youtu.be/E9cA6FUV4v0
+
 ## Features
-- Afyon Scripti (Opium Scripts)
-- Esrar Scripti (Cannabis Scripts)
-- Kokain Scripti (Cocaine Scripts)
-- 0.01 - 0.09 Resmon
-- Rastgele toplama alanları. (Random collection fields)
-- İsteğe bağlı kara para sistemi. (server.lua'da bulunuyor ayarı) (Optional black money system) (server.lua look)
-- Çok ayrıntılı ve kolay düzenlenebilir Config dosyası (Very detailed and easy editable Config file)
+
+* Opium, Cannabis, Cocaine, Meth scripts.
+* 0.00 - 0.01 Resmon
+* Çok ayrıntılı ve kolay düzenlenebilir Config dosyası (Very detailed and easy editable Config file)
 
 ## Dependencies
-- [qb-core](https://github.com/qbcore-framework/qb-core)
-- [ps-ui](https://github.com/Project-Sloth/ps-ui)
+
+* [qb-core](https://github.com/qbcore-framework/qb-core)
+* [ps-ui](https://github.com/Project-Sloth/ps-ui) (optional)
+* #### [ox\_lib](https://github.com/overextended/ox\_lib)&#x20;
+* ###
 
 ### Installation
-- Add the scripts items image to `qb-inventory(or lj-inventory)/html/images`
-- [images] Klasöründeki fotoğrafları `qb-inventory(or lj-inventory)/html/images` aktarın.
-- Add the scripts items to `qb-core/shared/items`
-- [shared] items.lua'daki kodları `qb-core/shared/items` aktarın.
+
+* Add the scripts items image to `qb-inventory(or lj-inventory)/html/images`
+* \[images] Klasöründeki fotoğrafları `qb-inventory(or lj-inventory)/html/images` aktarın.
+* Add the scripts items to `qb-core/shared/items`
+* \[shared] items.lua'daki kodları `qb-core/shared/items` aktarın.
+
 ```
 ['esrar'] 				 = {['name'] = 'esrar', 			  	  	['label'] = 'Esrar', 			['weight'] = 200, 		['type'] = 'item', 		['image'] = 'esrar.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'Esrar'},
 	['esrarislenmis'] 		 = {['name'] = 'esrarislenmis', 			['label'] = 'İşlenmiş Esrar', 	['weight'] = 100, 		['type'] = 'item', 		['image'] = 'islenmisesrar.png', 	['unique'] = false, 	['useable'] = true, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'İşlenmiş Esrar'},
@@ -33,5 +37,6 @@
 	['markedbills'] 				 = {['name'] = 'markedbills', 			  	  	['label'] = 'İzli Para', 			['weight'] = 100, 		['type'] = 'item', 		['image'] = 'markedbills.png', 			['unique'] = true, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Money?'},
 
 ```
-- Download the script and put it in the `[qb]` directory.
-- Script dosyalarını indirin ve `[qb]` dizinine koyun.
+
+* Download the script and put it in the `[qb]` directory.
+* Script dosyalarını indirin ve `[qb]` dizinine koyun.
